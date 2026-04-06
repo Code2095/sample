@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: antiquewhite;
+    border-bottom: 1px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color:black;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    background: white;
+    width: 300px;
+    height: 25px;
+    display: flex;
+}
+
+.searchinp{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+
+.searchbutton{
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+
+
+.banner{
+    background-image: url("img1.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    text-align: center;
+    
+
+}
+
+.bannerheading{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bannertext{
+    color: white;
+}
+
+
+.main-layout{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 16px;
+
+
+}
+
+.slidebar{
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border: 1px white;
+    border-radius: 8px;
+    display: flex;
+
+
+}
+
+.radio-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.radio-group input{
+    margin-right: 6px;
+}
+
+
+.rating-filter-container{
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+.rating-option{
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+     justify-content: center;
+     border: gray;
+
+}
+.rating-option:hover{
+    background-color: white;
+}
+.rating-text{
+    font-size: 14px;
+    color: gray;
+}
+
+
+.container1{
+    width: 90%;
+    margin:50px  auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+
+}
+
+.card1{
+    background-color: white;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    cursor: pointer;
+   
+
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.card .content h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+    color:black;
+    justify-content: center;
+}
+.card .content p{
+    font-size: 17px;
+    color: gray;
+    text-align: center;
+
+
+}
+
+
+
+
+.fcontainer{
+    max-width: 1180px;
+    margin: auto;
+
+}
+.footer{
+    background: grey;
+    padding: 70px;
+    margin-top: 120px;
+}
+
+.row{
+     display: flex;
+     flex-wrap: wrap;
+     
+}
+ul{
+    list-style: none;
+}
+.ftr-col{
+    width: 25%;
+    padding: 15px;
+}
+
+.ftr-col h1{
+    font-size: 18px;
+    color:white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.ftr-col h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.ftr-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.ftr-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+}
+
