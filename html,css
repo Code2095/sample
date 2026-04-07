@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+
+
+
+<div class="container">
+ 
+        <div class="header">
+            <div>
+              <h1>Notifications</h1>
+              <p>5 unread notifications</p>
+            </div>
+            <div class="header-actions">
+              <button class="buttoncontainer">Mark All Read</button>
+              
+            </div>
+        </div>
+</div>
+  
+
+
+  <div class="summary">
+    <div class="card">
+      <h2>12</h2>
+      <p>All</p>
+    </div>
+    <div class="card">
+      <h2>5</h2>
+      <p>Unread</p>
+    </div>
+    <div class="card danger">
+      <h2>2</h2>
+      <p>Important</p>
+    </div>
+  </div>
+
+ 
+  <div class="tabs">
+    <button class="active">All 12</button>
+    <button>Unread 5</button>
+    <button>Important 2</button>
+  </div>
+
+  
+            <div class="notifications">
+
+              <div class="notification">
+
+                <div class="content">
+                  <h3>Follow-up Reminder <span class="dot"></span></h3>
+                  <p>You have a follow-up call scheduled at 11:00 AM today.</p>
+                  <div class="actions">
+                    <button class="read">Mark as Read</button>
+                    <button class="delete">Delete</button>
+                  </div>
+                </div>
+                <span class="time">10 minutes ago</span>
+              </div>
+
+              <div class="notification">
+                
+                <div class="content">
+                  <h3>Payment Pending <span class="dot"></span></h3>
+                  <p>Payment of ₹10,000 is overdue by 1 day.</p>
+                  <div class="actions">
+                    <button class="read">Mark as Read</button>
+                    <button class="delete">Delete</button>
+                  </div>
+                </div>
+                <span class="time">30 minutes ago</span>
+              </div>
+
+              <div class="notification">
+                
+                <div class="content">
+                  <h3>Missed Call <span class="dot"></span></h3>
+                  <p>You missed a call at 9:15 AM.</p>
+                  <div class="actions">
+                    <button class="read">Mark as Read</button>
+                    <button class="delete">Delete</button>
+                  </div>
+                </div>
+                <span class="time">1 hour ago</span>
+              </div>
+
+  
+
+
+</div>
+
+
+</div>
+
+</div>
+</body>
+</html>
+    </div>
+</body>
+
+
+
+
+css
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background:rgb(229, 240, 234);
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header h1{
+    color: black;
+}
+.header p{
+    font-size: 14px;
+    color: black;
+}
+
+.header-actions{
+    display: flex;
+    gap: 10px;
+}
+
+.buttoncontainer{
+    background: #66c1d1;
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+}
+.summary{
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+}
+
+.card{
+    flex: 1;
+    background: #f1804b;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+
+}
+.tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+
+}
+
+.tabs button{
+    padding: 8px;
+    border-radius: 20px;
+    background: rgb(190, 96, 219);
+}
+
+.notifications{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.notification{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    position: relative;
+}
+.content h3{
+    font-size: 16px;
+}
+
+.content p{
+    font-size: 14px;
+    color: gray;
+    margin: 5px;
+}
+.actions{
+    margin-top: 5px;
+}
+.actions button{
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 6px;
+
+}
+
+.read{
+    background: #f1d34b;
+    color: rgb(16, 26, 22);
+}
+.delete{
+    background: #f1804b;
+    color: rgb(30, 51, 51);
+}
+
+.time{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 12px;
+    color: gray;
+}
+
+@media(max-width: 768px) {
+    .summary{
+        flex-direction: column;
+    }
+    .notification{
+        flex-direction: column;
+    }
+    .time{
+        position: static;
+        margin-top: 10px;
+
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+</html>
