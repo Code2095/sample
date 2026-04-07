@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>Notifications</h1>
+      <p>5 unread notifications</p>
+    </div>
+    <div class="header-actions">
+      <button class="btn">✔ Mark All Read</button>
+      <button class="icon-btn"><i class="fa fa-gear"></i></button>
+    </div>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="summary">
+    <div class="card">
+      <h2>12</h2>
+      <p>All</p>
+    </div>
+    <div class="card highlight">
+      <h2>5</h2>
+      <p>Unread</p>
+    </div>
+    <div class="card danger">
+      <h2>2</h2>
+      <p>Important</p>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="active">All 12</button>
+    <button>Unread 5</button>
+    <button>Important 2</button>
+  </div>
+
+  <!-- Notifications List -->
+  <div class="notifications">
+
+    <div class="notification">
+      <div class="icon purple"><i class="fa fa-calendar"></i></div>
+      <div class="content">
+        <h3>Follow-up Reminder <span class="dot"></span></h3>
+        <p>You have a follow-up call scheduled at 11:00 AM today.</p>
+        <div class="actions">
+          <button class="read">Mark as Read</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+      <span class="time">10 minutes ago</span>
+    </div>
+
+    <div class="notification">
+      <div class="icon green"><i class="fa fa-dollar-sign"></i></div>
+      <div class="content">
+        <h3>Payment Pending <span class="dot"></span></h3>
+        <p>Payment of ₹10,000 is overdue by 1 day.</p>
+        <div class="actions">
+          <button class="read">Mark as Read</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+      <span class="time">30 minutes ago</span>
+    </div>
+
+    <div class="notification">
+      <div class="icon blue"><i class="fa fa-phone"></i></div>
+      <div class="content">
+        <h3>Missed Call <span class="dot"></span></h3>
+        <p>You missed a call at 9:15 AM.</p>
+        <div class="actions">
+          <button class="read">Mark as Read</button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+      <span class="time">1 hour ago</span>
+    </div>
+
+  
+
+<!-- Achievement -->
+<div class="notification">
+  <div class="icon orange"><i class="fa fa-trophy"></i></div>
+  <div class="content">
+    <h3>Achievement Unlocked! 🏆</h3>
+    <p>Congratulations! You completed 50+ conversions this month.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">2 hours ago</span>
+</div>
+
+<!-- Follow-up Due -->
+<div class="notification">
+  <div class="icon purple"><i class="fa fa-calendar"></i></div>
+  <div class="content">
+    <h3>Follow-up Due <span class="dot"></span></h3>
+    <p>Follow-up with Priya Sharma is due today at 2:30 PM.</p>
+    <div class="actions">
+      <button class="read">Mark as Read</button>
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">3 hours ago</span>
+</div>
+
+<!-- Payment Received -->
+<div class="notification">
+  <div class="icon green"><i class="fa fa-dollar-sign"></i></div>
+  <div class="content">
+    <h3>Payment Received</h3>
+    <p>Payment of ₹8,500 received. Premium Plan activated.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">4 hours ago</span>
+</div>
+
+<!-- System Update -->
+<div class="notification">
+  <div class="icon gray"><i class="fa fa-info-circle"></i></div>
+  <div class="content">
+    <h3>System Update</h3>
+    <p>New features added to the telecaller panel. Check dashboard.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">5 hours ago</span>
+</div>
+
+<!-- Daily Target -->
+<div class="notification">
+  <div class="icon red"><i class="fa fa-exclamation-circle"></i></div>
+  <div class="content">
+    <h3>Daily Target Alert <span class="dot"></span></h3>
+    <p>You are 5 calls away from meeting your daily target.</p>
+    <div class="actions">
+      <button class="read">Mark as Read</button>
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">6 hours ago</span>
+</div>
+
+<!-- Incoming Call -->
+<div class="notification">
+  <div class="icon blue"><i class="fa fa-phone"></i></div>
+  <div class="content">
+    <h3>Incoming Call</h3>
+    <p>Received a call. Lead marked as interested.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">1 day ago</span>
+</div>
+
+<!-- Top Performer -->
+<div class="notification">
+  <div class="icon orange"><i class="fa fa-award"></i></div>
+  <div class="content">
+    <h3>Top Performer</h3>
+    <p>You are ranked #3 in the team leaderboard this month!</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">1 day ago</span>
+</div>
+
+<!-- Follow-up Completed -->
+<div class="notification">
+  <div class="icon purple"><i class="fa fa-calendar-check"></i></div>
+  <div class="content">
+    <h3>Follow-up Completed</h3>
+    <p>Follow-up with Deepak Singh marked as completed.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">2 days ago</span>
+</div>
+
+<!-- Payment Reminder Sent -->
+<div class="notification">
+  <div class="icon green"><i class="fa fa-dollar-sign"></i></div>
+  <div class="content">
+    <h3>Payment Reminder Sent</h3>
+    <p>Payment reminder sent for ₹12,000 Premium Plan.</p>
+    <div class="actions">
+      <button class="delete">Delete</button>
+    </div>
+  </div>
+  <span class="time">2 days ago</span>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
